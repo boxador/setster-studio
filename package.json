@@ -1,0 +1,8 @@
+{
+  "version": "1.0.31",
+  "name": "@setster/setster-studio-core",
+  "author": "Setster Inc.",
+  "homepage": "https://www.setster.com",
+  "private": false,
+  "main": "app.bundle.js"
+}
