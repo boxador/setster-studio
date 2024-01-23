@@ -1,8 +1,12 @@
 {
-  "version": "1.0.31",
+  "version": "1.0.32",
   "name": "@setster/setster-studio-core",
   "author": "Setster Inc.",
   "homepage": "https://www.setster.com",
   "private": false,
-  "main": "app.bundle.js"
+  "main": "app.bundle.js",
+  "bugs": {
+    "url": "https://github.com/boxador/setster-studio/issues",
+    "email": "support@setster.com"
+  }
 }
