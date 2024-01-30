@@ -1,0 +1,13 @@
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: malmstein/github-asana-action@v0.7.0
+        with:
+          asana-pat: ${{secrets.asana_pat}}
+          asana-project: ${{secrets.asana_project_id}}
+          action: 'create-asana-issue-task'
