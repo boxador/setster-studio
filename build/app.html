@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=480"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><title>Setster Studio</title><script src="https://browser.sentry-cdn.com/7.0.0/bundle.min.js" integrity="sha384-Kc6uzuQrNbSFm9z6sChm6mccIO2d1VB6s6Tc+bqIzPHbPeMldDCGFbayQRXCIa6T" crossorigin="anonymous"></script><script src="app.bundle.js"></script></head><body><div id="setster-embed"></div><script>window.processAppointment = appointment => {
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=480"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><title>Setster Studio</title><script src="https://browser.sentry-cdn.com/7.0.0/bundle.min.js" integrity="sha384-Kc6uzuQrNbSFm9z6sChm6mccIO2d1VB6s6Tc+bqIzPHbPeMldDCGFbayQRXCIa6T" crossorigin="anonymous"></script><style>body {
+        background-color: #ccc;
+      }
+      #setster-embed {
+        margin: 0 auto;
+        width: 900px;
+        height: 600px;
+      }</style><script src="app.bundle.js"></script></head><body><div id="setster-embed"></div><script>window.processAppointment = appointment => {
         console.log('appointment', appointment);
       };</script><script>window.onload = event => {
         if (window.SetsterStudio) {
