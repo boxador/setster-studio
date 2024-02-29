@@ -2,7 +2,7 @@
 
 Setster Studio is the next evolution of Setster's appointment scheduling software, offering a powerful and versatile solution for integrating appointment booking into your projects. With Setster Studio, you can effortlessly streamline your conversion funnels and provide your customers with personalized booking experiences that convert better and delight.
 
-# Alpha Disclaimer
+### Alpha Release Disclaimer
 Please be aware that this software is currently in its Alpha release phase. This means that the software is under active development and has not yet been fully tested. It may contain errors, bugs, or incomplete features that could cause system instability, data loss, or other unpredictable behavior. Users are advised to use this software with caution and at their own risk. The developers make no warranties of any kind, whether express or implied, regarding the software's stability, functionality, or reliability during this phase. Feedback and bug reports are highly appreciated and can be submitted to help improve the final product.
 
 ## About Setster
