@@ -2,9 +2,12 @@
 
 Setster Studio is the next evolution of Setster's appointment scheduling software, offering a powerful and versatile solution for integrating appointment booking into your projects. With Setster Studio, you can effortlessly streamline your conversion funnels and provide your customers with personalized booking experiences that convert better and delight.
 
+### Alpha Release Disclaimer
+Please be aware that this software is currently in its Alpha release phase. This means that the software is under active development and has not yet been fully tested. It may contain errors, bugs, or incomplete features that could cause system instability, data loss, or other unpredictable behavior. Users are advised to use this software with caution and at their own risk. The developers make no warranties of any kind, whether express or implied, regarding the software's stability, functionality, or reliability during this phase. Feedback and bug reports are highly appreciated and can be submitted to help improve the final product.
+
 ## About Setster
 
-Setster's scheduling platform is trusted by businesses worldwide and is backed by an appointment booking API that's not only easy to integrate but also highly scalable to meet the needs of enterprises. You can schedule thousands of appointments, manage their parameters remotely, and track user activity efficiently. Setster empowers your business to handle massive scheduling capacity, tailored to your specific needs.
+Setster's scheduling platform is trusted by businesses worldwide and is backed by an appointment booking API that's not only easy to integrate but also highly scalable to meet the needs of enterprises. You can schedule thousands of appointments, manage their parameters remotely, and track user activity efficiently. Setster empowers your business to handle massive scheduling capacity tailored to your specific needs.
 
 ## Setster Studio Highlights
 
@@ -13,14 +16,14 @@ Setster Studio allows you to create embeddable multistep booking form flows that
 ### Features
 
 - **Logic Flow**: Easily show different booking steps based on conditional user inputs.
-- **Styling**: Achieve a consistent user experience with easy to customize CSS classes.
+- **Styling**: Achieve a consistent user experience with easy-to-customize CSS classes.
 - **Starter Sandboxes**: Jumpstart your integration with our collection of code sandboxes.
 - **No Direct API Integration Required**: Add appointment booking to your projects without the need to directly integrate with the Setster API.
 - **Minimal Code**: Create a full-fledged booking experience with minimal code, saving you time and effort.
 
 ## Installation
 
-The Setster Studio embed can easily be configured in a code sandbox for testing or locally within your project. For getting started you can either setup all of the configurations yourself or start with our demo [code sandbox](https://www.setster.com/docs/studio/getting-started/default-sandbox) that has all of the available step types pre-configured.
+The Setster Studio embed can easily be configured in a code sandbox for testing or locally within your project. To get started, you can either set up all of the configurations yourself or start with our demo [code sandbox](https://www.setster.com/docs/studio/getting-started/default-sandbox) that has all of the available step types pre-configured.
 
 1. **Manual Setup**: [Create and configure your Setster account](https://www.setster.com/docs/studio/getting-started/create-account) and complete the setup described in the [Quick Start Guide](https://www.setster.com/docs/studio/getting-started/quick-start) within your existing project and run a dev server to preview your embed.
 
@@ -40,7 +43,7 @@ The [Quickstart Guide](https://www.setster.com/docs/studio/getting-started) is t
 
 ### Basic Features
 
-Next, you'll want to familarize yourself with the features available in Setster Studio by reviewing the [available step types](https://www.setster.com/docs/studio/getting-started/features).
+Next, you'll want to familiarize yourself with the features available in Setster Studio by reviewing the [available step types](https://www.setster.com/docs/studio/getting-started/features).
 
 ### Logic Flow
 
