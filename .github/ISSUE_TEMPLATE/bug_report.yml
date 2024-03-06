@@ -33,8 +33,8 @@ body:
     attributes:
       description: The Studio version. Loaded either from JSDelivr or cloned from a tagged version in this repository.
       label: Studio Version Number
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
