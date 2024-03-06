@@ -1,0 +1,84 @@
+name: 🐛 Bug Report
+description: Submit a bug report to help us improve
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Please help us help you!
+
+        Before filing your issue, ask yourself:
+        - Is this clearly a Setster Studio defect? 
+        - Could it be an issue with your settings.json configuration? Did you confirm your JSON file is valid with the Studio [Schema Validator Tool](https://setster.com/docs/studio/getting-started/debugging#schema-validator)?
+        - Could it be because of my own mistakes?
+
+        The quickest way to verify whether it's a Studio defect is by creating a **reproduction** of the issue using something like a code sandbox. When creating a reproducible bug sandbox be sure to make the bug obvious focus of the sandbox.
+
+        Bugs are fixed faster if you include:
+        - A repro sandbox to inspect the code
+        - An url to see the problem live (if possible)
+
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Please check the following items before creating an issue.
+      options:
+        - label: I have validated my JSON schema with the Studio [Schema Validator Tool](https://setster.com/docs/studio/getting-started/debugging#schema-validator).
+          required: true
+        - label: I have tried setting `developer_mode` to `true` or updating my `settings_version` to refresh the displayed content.
+        - label: I have tried creating a reproducible code sandbox.
+        - label: I have read the console error message carefully (if applicable).
+
+  - type: input
+    attributes:
+      description: The Studio version. Loaded either from JSDelivr or cloned from a tagged version in this repository.
+      label: Studio Version Number
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear description of what the bug is.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Reproducible sandbox or url
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Write down the steps to reproduce the bug. You should start with a fresh installation, or your git repository linked above.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      placeholder: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      placeholder: Write what actually happened with any related console log messages, error messages, and screenshots, if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Your environment
+      description: Details about the environment you experienced the bug in.
+      value: |
+        - Device: [e.g. iPhone6, Macbook, PC]
+        - OS: [e.g. iOS, iOS8.1]
+        - Browser [e.g. chrome, safari]
+        - Browser Version [e.g. 22]
+        - Related Development Stack: [e.g. React, Wordpress]
