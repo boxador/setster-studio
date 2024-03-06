@@ -9,7 +9,8 @@ body:
 
         Before filing your issue, ask yourself:
         - Is this clearly a Setster Studio defect? 
-        - Could it be an issue with your settings.json configuration? Did you confirm your JSON file is valid with the Studio [Schema Validator Tool](https://setster.com/docs/studio/getting-started/debugging#schema-validator)?
+        - Could it be an issue with your settings.json configuration?
+        - Did you confirm your JSON file is valid with the Studio [Schema Validator Tool](https://setster.com/docs/studio/getting-started/debugging#schema-validator)?
         - Could it be because of my own mistakes?
 
         The quickest way to verify whether it's a Studio defect is by creating a **reproduction** of the issue using something like a code sandbox. When creating a reproducible bug sandbox be sure to make the bug obvious focus of the sandbox.
@@ -23,7 +24,7 @@ body:
       label: Prerequisites
       description: Please check the following items before creating an issue.
       options:
-        - label: I have validated my JSON schema with the Studio [Schema Validator Tool](https://setster.com/docs/studio/getting-started/debugging#schema-validator).
+        - label: I have validated my JSON schema with the Studio Schema Validator Tool in the Debugging section of the docs.
           required: true
         - label: I have tried setting `developer_mode` to `true` or updating my `settings_version` to refresh the displayed content.
         - label: I have tried creating a reproducible code sandbox.
