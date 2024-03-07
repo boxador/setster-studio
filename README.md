@@ -72,7 +72,7 @@ Developer docs are all centrally located in the [developer portal](https://www.s
 We welcome contributions from the community to enhance Setster Studio. If you would like to contribute, please follow these guidelines:
 
 - **Bug Reports**: If you encounter any bugs or issues, please submit a [bug report here](https://github.com/boxador/setster-studio/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml).
-- **Feature Requests**: If you have ideas for new features or improvements, please submit a [feature request](https://github.com/boxador/setster-studio/issues/new?assignees=&labels=feature%2Cenhancement%2Cux%2Fui%2Cintegrations&projects=&template=feature_request.yml).
+- **Feature Requests**: If you have ideas for new features or improvements, please submit a [feature request](https://github.com/boxador/setster-studio/issues/new?assignees=&labels=feature&projects=&template=feature_request.yml).
 
 ## Changelog
 
