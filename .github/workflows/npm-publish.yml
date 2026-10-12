@@ -1,21 +1,34 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Deploy on 
+name: Publish Studio to npm
 
 on:
   release:
-    types: [created]
+    types: [published]
+
+permissions:
+  contents: read
 
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 22
           registry-url: https://registry.npmjs.org/
-      - run: npm publish -access public
+      - name: Validate release metadata and bundle
+        run: |
+          node -e 'const fs = require("fs"); const p = require("./package.json"); if (process.env.RELEASE_TAG !== "v" + p.version) throw new Error("Release tag does not match package version"); if (!fs.existsSync(p.main)) throw new Error("Package entry point is missing");'
+          npm pack --dry-run --ignore-scripts
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+      - name: Publish to latest
+        run: npm publish --access public --tag latest
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Update alpha tag
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          npm dist-tag add "@setster/setster-studio-core@$VERSION" alpha
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
